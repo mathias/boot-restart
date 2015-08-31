@@ -1,4 +1,4 @@
-# boot-readme
+# boot-restart
 
 Boot task to continuously run a shell command, and restart it when files change. Good for running non-Clojure servers and the like when your files are compiled.
 
