@@ -1,4 +1,4 @@
-(ns mathias.boot-run-continuously
+(ns mathias.boot-restart
   {:boot/export-tasks true}
   (:require [boot.core :as core :refer [deftask]]
             [boot.util :as util]
@@ -19,9 +19,9 @@
 (defn exit-code [process]
   (future (conch/exit-code process)))
 
-(deftask run-continuously
-  "desc"
-  [c command COMMAND str "Command line to run continuously. Required."]
+(deftask restart
+  "Continuously run a shell command, and restart it when files change"
+  [c command COMMAND str "Command line to run. Required."]
   (let [last-fileset (atom nil)
         process      (atom (shell command))]
     (core/with-pre-wrap fileset

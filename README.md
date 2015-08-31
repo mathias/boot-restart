@@ -1,4 +1,4 @@
-# boot-???
+# boot-readme
 
 <!--[![Clojars Project]()]()-->
 
@@ -11,15 +11,15 @@ Include the project:
 ```clojure
 ;; in build.boot
 (set-env!
-  :dependencies '[mathias/boot-??? "0.0.1"])
+  :dependencies '[mathias/boot-restart "0.0.1"])
 ```
 
 ### Terminal
 
-boot-??? is meant to be used with your other boot tasks. For example:
+boot-restart is meant to be used with your other boot tasks. For example:
 
 ```
-boot watch compile ??? --command "node app.js"
+boot watch compile restart --command "node app.js"
 ```
 
 ### build.boot file in your project
@@ -29,10 +29,8 @@ In your `build.boot` you could call it like this:
 ```clojure
 (deftask run
   []
-  (comp (watch) (??? :command "node app.js")))
+  (comp (watch) (restart :command "node app.js")))
 ```
-
-<!--For examples of advanced settings in `build.boot`, refer to the [example project](https://github.com/mathias/boot-sassc-example).-->
 
 ## Options
 
