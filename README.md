@@ -11,7 +11,7 @@ Include the project:
 ```clojure
 ;; in build.boot
 (set-env!
-  :dependencies '[mathias/boot-restart "0.0.1"])
+  :dependencies '[mathias/boot-restart "0.0.2"])
 ```
 
 ### Terminal
