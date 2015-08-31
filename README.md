@@ -1,6 +1,6 @@
 # boot-restart
 
-Boot task to continuously run a shell command, and restart it when files change. Good for running non-Clojure servers and the like when your files are compiled.
+Boot task to continuously run a shell command, and restart it when files change. Good for running non-Clojure servers and when your files are compiled, or any time you need a daemonized command run and restarted in your boot project.
 
 [![Clojars Project](http://clojars.org/mathias/boot-restart/latest-version.svg)](http://clojars.org/mathias/boot-restart)
 
