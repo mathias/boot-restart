@@ -8,7 +8,7 @@
 (bootlaces! +version+)
 
 (task-options!
- pom  {:project     'mathias/boot-run-continuously
+ pom  {:project     'mathias/boot-restart
        :version     +version+
        :description "Run a shell command continuously and restart it on file change."
        :url         "https://github.com/mathias/boot-run-continuously"
